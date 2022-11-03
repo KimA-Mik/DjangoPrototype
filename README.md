@@ -1,2 +1,2 @@
 # DjangoPrototype
-Site prototype madi in educational purposes
+Site prototype made in educational purposes
