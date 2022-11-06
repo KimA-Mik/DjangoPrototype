@@ -13,8 +13,12 @@ def index(request):
 
 def game(request, game_id):
     template = loader.get_template('StoreTemplates/gamePage.html')
-    game = GameItem.objects.filter(id=game_id)[0]
-    context = {
-        'game': game
-    }
+    games = GameItem.objects.filter(id=game_id)
+    context = {}
+
+    if len(games) > 0:
+        context = {
+            'game': games[0]
+        }
+
     return HttpResponse(template.render(context, request))
