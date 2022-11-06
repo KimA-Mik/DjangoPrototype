@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    {% if game %}
+    <h2>{{game.title}}</h2>
+    <h3>{{game.description}}</h3>
+    {% else %}
+    <p>There's no such game</p>
+    {% endif %}
+</body>
+
+</html>
