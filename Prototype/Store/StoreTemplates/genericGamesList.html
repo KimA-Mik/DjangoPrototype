@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        {%include "StaticStore/Basic.css"%}
+    </style>
+    <head>
+        <title>Жанры</title>
+    </head>
+
+<body>
+    {% include "StoreTemplates/header.html" %}s
+    <h1>{{listTitle}}</h1>
+    {% if gamesList %}
+    <ul>
+        {% for game in gamesList %}
+        <li>
+            <div>
+            <a href="/store/games/{{ game.id }}/">{{ game.title }}</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>
