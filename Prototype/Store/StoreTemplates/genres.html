@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        {%include "StaticStore/Basic.css"%}
+    </style>
+    <head>
+        <title>Жанры</title>
+    </head>
+
+<body>
+    {% include "StoreTemplates/header.html" %}
+    <h1>Доступные в магазине жанры</h1>
+    {% if genresList %}
+    <ul>
+        {% for genre in genresList %}
+        <li>
+            <div>
+            <a href="{{ genre.id }}/">{{ genre.name }}</a>
+            <p>{{genre.description}}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+
+</html>

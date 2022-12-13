@@ -1,0 +1,9 @@
+body{
+    background-color: #f5f6fa;
+    color: #2f3640;
+}
+
+a:link           { color: #40739e }  /* unvisited links       */
+a:visited        { color: #8c7ae6 }  /* visited links         */
+a:hover, a:focus { color: #487eb0 }  /* user hovers, or focus */
+a:active         { color: #40739e }  /* active links          */

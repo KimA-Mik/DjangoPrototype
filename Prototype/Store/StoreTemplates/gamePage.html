@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<head></head>
+    <style>
+        {%include "StaticStore/Basic.css"%}
+    </style>
+<head>
+    {% if game %}
+        <title>{{game.title}}</title>
+    {% else %}
+        <title>Игра не найдена</title>
+    {% endif %}
+</head>
 
 <body>
+    {% include "StoreTemplates/header.html" %}
     {% if game %}
     <h2>{{game.title}}</h2>
     <h3>{{game.description}}</h3>

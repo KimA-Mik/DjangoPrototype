@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 start.Ps1
+**/migrations
+.vscode/
+.idea/
